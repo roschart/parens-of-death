@@ -8,6 +8,7 @@
   :dependencies [
                  [compojure "1.5.2"]
                  [com.stuartsierra/component "0.3.2"]
+                 [expectations "2.1.9"]
                  [http-kit "2.2.0"]
                  [org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.518"]
@@ -17,7 +18,8 @@
 
 
   :profiles {:dev {:plugins [[lein-cljsbuild "1.1.5"]
-                             [lein-figwheel "0.5.10"]]
+                             [lein-figwheel "0.5.10"]
+                             [lein-autoexpect "1.9.0"]]
                    ;:dependencies [[figwheel-sidecar "0.5.10"]]
                    :dependencies []
                    :source-paths ["dev"]
